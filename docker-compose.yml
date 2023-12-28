@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  app:
+    build: .
+    ports:
+      - "80:8080"
+    environment:
+      - NEW_UID=1001
+      - NEW_GID=1001
